@@ -1,17 +1,19 @@
 <template>
 
-    <header class="d-flex justify-content-between align-items-center">
-        <div class="container">
-            <img :src="logoHeader" alt="logo">
-        </div>
-        <div id="nav-header">
-            <ul class="d-flex">
-                <li v-for="(item, index) in navHeader" :key="index">
-                    <a :href="item.url" class="text-uppercase">
-                        {{item.name}}
-                    </a>
-                </li>
-            </ul>
+    <header class="px-5">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <img :src="logoHeader" alt="logo">
+            </div>
+            <div id="nav-header">
+                <ul class="d-flex">
+                    <li v-for="(item, index) in navHeader" :key="index">
+                        <a :href="item.url" class="text-uppercase">
+                            {{item.name}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 </template>
@@ -74,7 +76,6 @@ export default {
 
 header {
     background-color: $backgroundHeader;
-    margin-top: 20px;
     padding: 10px;
     display: flex;
     ul{
