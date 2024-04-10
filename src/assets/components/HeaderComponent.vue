@@ -1,6 +1,6 @@
 <template>
 
-    <header class="px-5">
+    <header>
         <div class="container d-flex justify-content-between align-items-center">
             <div>
                 <img :src="logoHeader" alt="logo">
@@ -90,6 +90,7 @@ header {
     }
     a{
         color: black;
+        font-weight: 500;
         text-decoration: none;
         &:hover{
         color: $backgroundFooterTop;
