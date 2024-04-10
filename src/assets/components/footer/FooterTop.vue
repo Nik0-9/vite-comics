@@ -52,7 +52,7 @@
     background-color: $backgroundFooterTop;
     padding: 40px 0;
     img{
-        width: 50px;
+        width: 40px;
     }
     a{
         color: white;

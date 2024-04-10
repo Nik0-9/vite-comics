@@ -17,5 +17,6 @@ main{
     background-color: $backgroundMain;
     color: white;
     font-size: 3rem;
+    height: 150px;
 }
 </style>
