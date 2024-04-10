@@ -1,17 +1,18 @@
 <template>
-    <div id="footer-mid" class="d-flex justify-content-between">
-        <div id="left" class="container ">
-            <div class="d-flex mt-5">
-                <ul v-for="(item, index) in footerList" :key="index" >
-                    {{item.title}}
-                    <li v-for="(listitem, i) in item.list" :key="i">
-                    <a href="#">{{listitem}}</a>
-                </li>
-                </ul>
+    <div id="footer-mid">
+        <div class="container d-flex justify-content-between">
+            <div id="left">
+                <div class="d-flex mt-5">
+                    <ul v-for="(item, index) in footerList" :key="index" >
+                        <h4>{{item.title}}</h4>
+                        <li v-for="(listitem, i) in item.list" :key="i">
+                        <a href="#">{{listitem}}</a>
+                    </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div id="right">
-
+            <div id="right">
+            </div>
         </div>
     </div>
 </template>
@@ -80,14 +81,20 @@ export default {
     background-image: url('/img/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
     ul{
         color: white;
         list-style: none;
     }
     a{
         text-decoration: none;
-        color: white;
+        color: rgb(180, 180, 180);
+    }
+
+    #right{
+        width: 100%;
+        background-image: url('/img/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 </style>

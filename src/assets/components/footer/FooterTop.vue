@@ -3,7 +3,7 @@
         <div class="container d-flex justify-content-between align-items-center">
             <div v-for="(item, index) in navFooterTop" :key="index">
                 <img :src="item.icon" alt="icona">
-                <a href="">{{item.text}}</a>
+                <a href="#" class="text-uppercase">{{item.text}}</a>
             </div>
         </div>
     </footer>
