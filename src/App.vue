@@ -1,15 +1,20 @@
 <template>
-  <div>
     <HeaderComponent />
-  </div>
+    <MainComponent />
+    <FooterComponent />
 </template>
 
 <script>
-import HeaderComponent from './assets/components/HeaderComponent.vue'
+import HeaderComponent from './assets/components/HeaderComponent.vue';
+import MainComponent from './assets/components/MainComponent.vue';
+import FooterComponent from './assets/components/footer/FooterComponent.vue';
+
   export default {
     name: 'App',
     components:{
-        HeaderComponent
+        HeaderComponent,
+        MainComponent,
+        FooterComponent
     }
   }
 </script>
