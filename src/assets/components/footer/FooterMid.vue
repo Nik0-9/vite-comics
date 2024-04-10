@@ -91,7 +91,7 @@ export default {
     }
 
     #right{
-        width: 100%;
+        width: 50%;
         background-image: url('/img/dc-logo-bg.png');
         background-repeat: no-repeat;
         background-position: center;
