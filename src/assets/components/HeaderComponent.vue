@@ -3,12 +3,12 @@
     <header>
         <div class="container d-flex justify-content-between align-items-center">
             <div>
-                <img :src="logoHeader" alt="logo">
+                <img :src="logoHeader" alt="logo" class="w-75 p-2">
             </div>
             <div id="nav-header">
                 <ul class="d-flex">
                     <li v-for="(item, index) in navHeader" :key="index">
-                        <a :href="item.url" class="text-uppercase">
+                        <a :href="item.url" class="text-uppercase after">
                             {{item.name}}
                         </a>
                     </li>
@@ -77,24 +77,42 @@ export default {
 header {
     background-color: $backgroundHeader;
     padding: 10px;
-    display: flex;
-    ul{
+
+    ul {
         list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px; 
     }
-    li{
-       margin: 0 10px; 
-       font-size: 0.9rem;
-       &:hover{
-        border-bottom: 2px solid $backgroundFooterTop;
-       }
+
+    li {
+        font-size: 0.9rem;
     }
-    a{
+
+    a {
         color: black;
         font-weight: 500;
         text-decoration: none;
-        &:hover{
-        color: $backgroundFooterTop;
-        }
+        position: relative; 
+    }
+
+    a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 61px;
+        width: 100%;
+        height: 3px;
+        background-color: $backgroundFooterTop;
+        visibility: hidden; 
+        transform: scaleX(0);
+        
+    }
+
+    a:hover::after {
+        visibility: visible; 
+        transform: scaleX(1);
     }
 }
 </style>
