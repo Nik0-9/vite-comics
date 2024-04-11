@@ -9,7 +9,7 @@
                 </h3>
             </div>
             <div class="row ">
-                <div class="col-12 col-md-4 col-lg-3 col-xl-2 text-light mb-3" v-for="(item, index) in comics" :key="index">
+                <div class="col-12 col-md-4 col-lg-3 col-xl-2 text-light mb-3 " v-for="(item, index) in comics" :key="index">
                     <CardComponent :image="item.thumb" :title="item.series" :type="item.type" :price="item.price" />
                 </div>
             </div>
@@ -53,20 +53,30 @@ h3{
 
 .series{
     width: 250px;
+    padding: 6px 10px;
     background-color: $backgroundFooterTop;
-    transform: translateY(-120%);
+    transform: translateY(-100%);
+    transition: 0.5s;
+    &:hover{
+    color: $backgroundFooterTop;
+        background-color: white;
+    }
 }
 
 main {
     background-color: $backgroundMain;
     color: white;
-    font-size: 3rem;
 }
 .load-more{
+    font-size: large;
     margin: 0 auto;
-    font-size: 1.5rem;
-    padding: 6px 10px;
+    padding: 10px 20px;
     background-color: $backgroundFooterTop;
+    transition: 0.5s;
+    &:hover{
+    color: $backgroundFooterTop;
+        background-color: white;
+    }
 }
 
 </style>

@@ -18,5 +18,11 @@
 <style lang="scss" scoped>
 img{
     max-height: 250px;
+    transition: 0.5s;
+&:hover{
+    opacity: 0.6;
+    
+    }
 }
+
 </style>

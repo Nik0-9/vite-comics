@@ -106,7 +106,6 @@ header {
         height: 3px;
         background-color: $backgroundFooterTop;
         visibility: hidden; 
-        transform: scaleX(0);
         
     }
 
