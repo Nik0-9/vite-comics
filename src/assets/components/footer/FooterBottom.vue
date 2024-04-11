@@ -40,6 +40,9 @@ button{
     color: white;
     border: 3px solid $backgroundFooterTop;
 }
+span:hover{
+    cursor: pointer;
+}
 #follow{
 color: $backgroundFooterTop;
 font-size: 1.3rem;
