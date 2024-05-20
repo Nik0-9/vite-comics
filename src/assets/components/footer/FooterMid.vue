@@ -4,10 +4,10 @@
             <div id="left">
                 <div class="d-flex mt-5">
                     <ul v-for="(item, index) in footerList" :key="index" >
-                        <h4>{{item.title}}</h4>
+                        <h5>{{item.title}}</h5>
                         <li v-for="(listitem, i) in item.list" :key="i">
                         <a href="#">{{listitem}}</a>
-                    </li>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -82,6 +82,8 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     ul{
+        margin: 0;
+        padding-right: 10px;
         color: white;
         list-style: none;
     }

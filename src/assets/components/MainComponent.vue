@@ -10,7 +10,7 @@
             </div>
             <div class="row ">
                 <div class="col-12 col-md-4 col-lg-3 col-xl-2 text-light mb-3 " v-for="(item, index) in comics" :key="index">
-                    <CardComponent :image="item.thumb" :title="item.series" :type="item.type" :price="item.price" />
+                    <CardComponent :image="item.thumb" :title="item.series" :type="item.type" :price="item.price" @remove="removeCard"/>
                 </div>
             </div>
             <div class="text-center">
@@ -31,6 +31,11 @@ export default {
     data() {
         return {
             comics,
+        }
+    },
+    methods:{
+        removeCard(index){
+            index
         }
     }
 }
